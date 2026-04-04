@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About BlueComet.Work</title>
-    <meta name="description" content="I build fast, beautiful websites using advanced AI tools + human creative direction.">
+    <meta name="description" content="Fast, beautiful websites powered by AI and curated with care. Transparent pricing.">
     
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;900&family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
     
@@ -48,7 +48,7 @@
         .container {
             max-width: 820px;
             margin: 0 auto;
-            padding: 20px 20px 80px;
+            padding: 20px 20px 100px;
         }
 
         .section {
@@ -77,35 +77,55 @@
             opacity: 0.92;
         }
 
-        ul {
-            padding-left: 20px;
-        }
-
         .highlight {
             color: var(--accent);
             font-weight: 600;
         }
 
-        .cta {
+        .pricing-grid {
+            display: grid;
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .price-card {
+            background: #0f1629;
+            border-radius: 16px;
+            padding: 28px;
+            border: 1px solid rgba(0, 242, 255, 0.15);
             text-align: center;
-            margin: 60px 0 40px;
+            transition: all 0.3s ease;
+        }
+
+        .price-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent);
+        }
+
+        .price {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--accent);
+            margin: 12px 0;
         }
 
         .btn {
             display: inline-block;
-            padding: 16px 36px;
+            margin-top: 20px;
+            padding: 14px 32px;
             background: linear-gradient(90deg, #00f2ff, #0077ff);
             color: #000;
             font-weight: 900;
-            font-size: 1.15rem;
             text-decoration: none;
             border-radius: 9999px;
-            transition: all 0.3s ease;
         }
 
-        .btn:hover {
-            transform: scale(1.06);
-            box-shadow: 0 0 35px rgba(0, 242, 255, 0.6);
+        .guidelines {
+            background: #0f1629;
+            padding: 28px;
+            border-radius: 16px;
+            border: 1px solid rgba(255,255,255,0.08);
+            margin-top: 40px;
         }
 
         footer {
@@ -140,9 +160,8 @@
                 <li>I craft detailed prompts and iterate rapidly with AI to build a strong foundation.</li>
                 <li>I refine the design, responsiveness, typography, and user experience myself.</li>
                 <li>We collaborate until the site feels like <span class="highlight">yours</span>.</li>
-                <li>Launch options: hosted on a clean <strong>.bluecomet.work</strong> subdomain or full code ownership so you can host anywhere.</li>
+                <li>Launch options: hosted on a clean <strong>yourname.bluecomet.work</strong> subdomain or full code ownership.</li>
             </ul>
-            <p>This hybrid approach lets me deliver professional results without agency timelines or prices.</p>
             <div class="accent-bar"></div>
         </div>
 
@@ -150,23 +169,78 @@
             <h2>Why Choose BlueComet.Work</h2>
             <ul>
                 <li><strong>Speed</strong> — Most simple sites go from idea to live in days, not weeks.</li>
-                <li><strong>Affordable premium feel</strong> — Modern, eye-catching designs without the huge price tag.</li>
-                <li><strong>Creative direction included</strong> — I don't just generate; I curate and elevate.</li>
-                <li><strong>Transparent process</strong> — No hidden fees for small revisions on base packages.</li>
-                <li><strong>Future-friendly</strong> — Built with clean code and modern best practices so your site can grow.</li>
+                <li><strong>Affordable premium feel</strong> — Modern designs without the huge price tag.</li>
+                <li><strong>Creative direction included</strong> — I curate and elevate, I don’t just generate.</li>
+                <li><strong>Transparent process</strong> — Clear pricing and no hidden fees for small revisions.</li>
             </ul>
             <div class="accent-bar"></div>
         </div>
 
-        <div class="cta">
-            <p style="font-size: 1.25rem; margin-bottom: 20px;">Ready to launch something that stands out?</p>
-            <a href="mailto:your@email.com" class="btn">Let's Build Your Site</a>
+        <!-- Pricing Section -->
+        <div class="section">
+            <h2>Simple & Transparent Pricing</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 40px;">All packages include mobile-first design, my personal polish, and limited revisions on the base scope.</p>
+            
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>🚀 Simple Website Package</h3>
+                    <div class="price">$199 one-time</div>
+                    <p>+ $12/month hosting (optional)</p>
+                    <ul style="text-align: left; margin: 20px 0;">
+                        <li>1–5 pages/sections</li>
+                        <li>Hosted on yourname.bluecomet.work</li>
+                        <li>Minor adjustments included</li>
+                    </ul>
+                    <a href="mailto:atob@bluecomet.work" class="btn">Get Started</a>
+                </div>
+
+                <div class="price-card">
+                    <h3>💻 Full Ownership</h3>
+                    <div class="price">$249 one-time</div>
+                    <p>(No monthly fee if you host yourself)</p>
+                    <ul style="text-align: left; margin: 20px 0;">
+                        <li>Full website code delivered</li>
+                        <li>Hosting setup guide</li>
+                        <li>Domain setup help</li>
+                    </ul>
+                    <a href="mailto:atob@bluecomet.work" class="btn">Get Started</a>
+                </div>
+
+                <div class="price-card">
+                    <h3>⚙️ Custom Project</h3>
+                    <div class="price">Starting at $499</div>
+                    <p>More pages, forms, advanced features, etc.</p>
+                    <a href="mailto:atob@bluecomet.work" class="btn">Discuss Your Project</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Guidelines / Right to Refuse -->
+        <div class="section">
+            <h2>Project Guidelines</h2>
+            <div class="guidelines">
+                <p>I’m happy to build for almost any legitimate business or personal project. However, I reserve the right to decline or end a project if the content involves:</p>
+                <ul>
+                    <li>Illegal activities</li>
+                    <li>Hate speech, violence, or discrimination</li>
+                    <li>Adult / explicit content</li>
+                    <li>Gambling or high-risk financial services</li>
+                    <li>Anything I believe could harm my reputation or hosting partners</li>
+                </ul>
+                <p>This helps me keep BlueComet.Work focused on clean, positive, creative work. Normal political, opinion, or advocacy sites are generally fine — I just avoid extremes.</p>
+                <p>All final content responsibility lies with the client.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 60px 0 40px;">
+            <a href="mailto:atob@bluecomet.work" class="btn" style="font-size: 1.2rem; padding: 18px 40px;">Ready to build? Email me at atob@bluecomet.work</a>
         </div>
 
     </div>
 
     <footer>
-        <p>BlueComet.Work — Powered by AI • Curated by me • Built for you.</p>
+        <p>BlueComet.Work — Powered by AI • Curated by me • Built for you.<br>
+        Contact: <a href="mailto:atob@bluecomet.work" style="color: var(--accent);">atob@bluecomet.work</a></p>
     </footer>
 
 </body>
